@@ -1,11 +1,12 @@
 $(document).ready(function() {
-        // Transition effect for navbar
-        $(window).scroll(function() {
-          // checks if window is scrolled more than 500px, adds/removes solid class
-          if($(this).scrollTop() > 40) {
-              $('.navbar').addClass('solid');
-          } else {
-              $('.navbar').removeClass('solid');
-          }
-        });
+    $(window).scroll(function() {
+      $('nav').toggleClass('scrolled', $(this).scrollTop() > 175);
+    });
+    $(window).scroll(function() {
+      if($(this).scrollTop() > 175){
+        $('.nav-cc').addClass('nav-color');
+      } else {
+        $('.nav-cc').removeClass('nav-color');
+      }
+    });
 });

@@ -8,8 +8,11 @@
     <title> Michael Jennings | Web Dev </title>
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
+    <!-- Fontaweseome icons -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+    <!-- Google Fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,900|Questrial|Roboto+Condensed:700&display=swap" rel="stylesheet">
+    <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
 
     <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
@@ -23,24 +26,24 @@
     <![endif]-->
   </head>
   <!--  BODY BEGINS  -->
-  <body>
+  <body data-spy="scroll" data-target="#navbar-example">
   <!-- NAV BAR -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" role="navigation" id="navbar-example">
-    <a class="navbar-brand" href="#">Michael Jennings</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top py-4" role="navigation" id="navbar-example">
+    <a class="navbar-brand nav-cc" href="#">Michael Jennings</a>
+    <button class="navbar-toggler nav-cc" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon nav-cc"></span>
     </button>
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav ml-auto">
+      <ul class="navbar-nav ml-auto nav-cc">
         <li class="nav-item">
-          <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
+          <a class="nav-link nav-cc" href="#home">Home <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#about">About</a>
+          <a class="nav-link nav-cc" href="#about">About</a>
         </li>
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <a class="nav-link nav-cc dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             Work
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -51,30 +54,64 @@
           </div>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#faq">FAQ's</a>
+          <a class="nav-link nav-cc" href="#faq">FAQ's</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#contact">Contact</a>
+          <a class="nav-link nav-cc" href="#contact">Contact</a>
         </li>
       </ul>
     </div>
   </nav>
   <!-- END NAV BAR -->
-  <div class= "home-container" id = "home" >
-    <div class="container" >
-      <h1>Hello World</h1>
-      <p>I'm hosted with GitHub Pages.</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  <div class="jumbotron" id="home">
+    <div class="container-inner">
+      <div class="container jumbotron-content">
+        <h3>i am your</h3>
+        <h1>DEVELOPER</h1>
+      </div>
+    </div>
+  </div>
+  <!-- END HOME CONTAINER -->
+  <div class="container" id="about">
+    <div class="row">
+      <div class="col, col-sm mx-auto d-block">
+        <h1>about.</h1>
+        <p class="lead"> I used design for print. Now, I'm embarking on marrying my passion for both creative design and the challenges of web development.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </div>
+      <div class="col, col-sm">
+        <img src="https://images.unsplash.com/photo-1507038732509-8b1a9623223a?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=60" alt="self portrait" width="100%" height="auto" class="selfie mx-auto my-auto d-block">
+      </div>
+    </div>
+  </div>
+    <!-- END ABOUT CONTAINER -->
+  <div class="container" id="work">
+    <div class="db-1">
+      <div class="work">
+        <div class="row">
+          <div class="col-sm-12, col-m-3, col-l">
 
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-      
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+    <!-- END WORK CONTAINER -->
+    <footer>
+  <div class="container">
+    <div class="row">
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm copyright">
+        &copy; 2018 Michael Jennings
+      </div>
     </div>
   </div>
 
-
-
+</footer>
   <!-- END FOOTER CONTAINER-->
   <!-- ============================= -->
   <!-- All your JavaScript comes now -->
@@ -85,7 +122,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
-  <!-- Can place script tags with JavaScript files here -->
+  <!-- Place script tags with JavaScript files here -->
   <script src="js/scripts.js"></script>
 
   </body>

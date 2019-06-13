@@ -1,104 +1,109 @@
-.navbar {
-  height: 80px;
-  background-color: transparent;
-  border: none;
-  color: white;
-  z-index: 100;
-  transition: background-color 1s ease 0s;
+
+
+/* For testing purposes */
+body {
+  position: relative;
+  overflow-y: scroll;
+  margin-left: 0 !important;
+}
+
+/* font-family: 'Questrial', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Roboto Condensed', sans-serif; */
+/* =====================================  */
+/*            NAV BAR SECTION             */
+/* =====================================  */
+/* Add the below transitions to allow a smooth color change similar to lyft */
+
+.bg-dark {
+  transition: 500ms ease;
+  background: transparent !important;
+}
+
+.bg-dark.scrolled {
+  background-color: #ffffff !important;
+}
+
+.nav-cc {
+  color: white !important;
+}
+
+.nav-cc.nav-color {
+  transition: 500ms ease;
+  color: #000000 !important;
+}
+
+.navbar-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(255, 255, 255)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+  border-style: none;
+}
+
+.navbar-dark .navbar-toggler {
+  border-color: rgba(255, 255, 255, 0);
+}
+
+.navbar-toggler .navbar-toggler-icon.nav-color {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(68, 67, 67, 0.78)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+  transition: 500ms ease;
+}
+/* .navbar-toggler.nav-color {
+  border-color: rgba(68, 67, 67, 0.78);
+    transition: 500ms ease;
+} */
+
+
+/* .navbar-toggler:focus {
+  outline-color: rgb(255, 255, 255);
+} */
+
+nav {
+  z-index: 1;
+}
+/* =====================================  */
+/*          JUMBOTORN SECTION             */
+/* =====================================  */
+.jumbotron {
+  padding: 4rem 1rem !important;
+  background-image: url(https://images.unsplash.com/photo-1426647451887-5f2be01918a9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80);
+  background-size: cover;
+  height: 600px;
+  opacity: 0.75;
+}
+
+.jumbotron-content> h1{
+  color: #ffffff;
+  text-shadow: 2px 3px 4px #000000;
+  font-family: 'Poppins', sans-serif !important;
+  font-weight: 900 !important;
+}
+
+.jumbotron-content> h3{
+  color: #ffffff;
+  text-shadow: 2px 3px 4px #000000;
+  line-height: 0em;
+  margin-left: 7rem;
+}
+
+.container-inner {
+  position: absolute;
+  padding: 12rem 0rem;
+}
+/* =====================================  */
+/*           ABOUT ME SECTION             */
+/* =====================================  */
+img.selfie {
+  /* width: 200px; */
+  padding: 0em 2em;
+  height: 95%;
+  object-fit: cover;
 }
 
 
-.navbar-default {
-
-   .navbar-brand {
-     margin-top: 10px;
-     color: white;
-
-      &:hover {
-         color: #C57ED3;
-         border: 1px solid #C57ED3;
-      }
-   }
-
-  .navbar-nav {
-
-    > li {
-
-      > a {
-        color: white;
-        margin: 10px 5px 5px 5px;
-
-      }
-      > a:hover, > a:active, > a:focus {
-        color: #C57ED3;
-        border: 1px solid #C57ED3;
-      }
-      > a:visited {
-        color: #C57ED3;
-        text-decoration: none;
-      }
-
-    } //end li
-
-    > .active {
-
-      > a, > a:hover, > a:focus {
-        background-color: transparent;
-        color: #C57ED3;
-      }
-
-    }
-
-  } //end .navbar-nav
-
-  //Collapsed styles
-  .navbar-toggle {
-    border-color: #C57ED3;
-
-      &:hover, &:focus {
-        background-color: #490D40;
-      }
-
-
-
-      .icon-bar {
-        color: #C57ED3;
-        background-color: #C57ED3;
-
-      }
-  }
-
-  .navbar-collapse.collapse.in ul {
-    background-color: #490D40;
-  }
-
-} //end .navbar-default
-
-
-
-/* Solid class attached on scroll past first section */
-
-.navbar.solid {
-  background-color: #490D40;
-  transition: background-color 1s ease 0s;
-  box-shadow: 0 0 4px grey;
-
-    .navbar-brand {
-      color: #C57ED3;
-      transition: color 1s ease 0s;
-    }
-
-    .navbar-nav {
-
-       > li {
-
-          > a {
-            color: #C57ED3;
-            transition: color 1s ease 0s;
-          }
-
-       } //end li
-
-    } //end .navbar-nav
-
+/* =====================================  */
+/*           FOOTER SECTION             */
+/* =====================================  */
+footer {
+  margin-top: 4em;
+  padding: 3em 0em;
+  background-color: #0a4b83;
 }
