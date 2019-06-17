@@ -111,5 +111,26 @@ nav {
 footer {
   margin-top: 4em;
   padding: 3em 0em;
-  background-color: #0a4b83;
+  background-color: #000000;
+  color: #dbe8ed;
+  text-align: center;
+}
+
+.copyright {
+  font-family: Questrial;
+  letter-spacing: 5px;
+}
+
+.fa {
+  font-size: .05rem;
+}
+
+.fab {
+  color: #dbe8ed !important;
+  text-decoration: none;
+}
+
+.fab:hover{
+  text-decoration: none;
+  color: #9dccd0 !important;
 }

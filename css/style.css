@@ -88,7 +88,7 @@ nav {
 #work-page {
   padding: 4rem 1rem !important;
   background-image: url();
-  background-color: #fc7a3a;
+  background-color: #f1582a;
   background-size: cover;
   height: 600px;
   opacity: 0.75;
@@ -97,7 +97,7 @@ nav {
 #about-page {
   padding: 4rem 1rem !important;
   background-image: url();
-  background-color: #1d97fb;
+  background-color: #64c8d0;
   background-size: cover;
   height: 600px;
   opacity: 0.75;
@@ -243,5 +243,26 @@ p{
 footer {
   margin-top: 4em;
   padding: 3em 0em;
-  background-color: #0a4b83;
+  background-color: #104C61;
+  color: #dbe8ed;
+  text-align: center;
+}
+
+.copyright {
+  font-family: Questrial;
+  letter-spacing: 5px;
+}
+
+.fa {
+  font-size: .05rem;
+}
+
+.fab {
+  color: #dbe8ed !important;
+  text-decoration: none;
+}
+
+.fab:hover{
+  text-decoration: none;
+  color: #9dccd0 !important;
 }
