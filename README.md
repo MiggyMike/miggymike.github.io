@@ -1,3 +1,3 @@
-# mjennings.github.io
+# miggymike.github.io
 
 Potfolio site
