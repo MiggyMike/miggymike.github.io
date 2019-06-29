@@ -1,3 +1,3 @@
 # miggymike.github.io
 
-Potfolio site
+Portfolio site
